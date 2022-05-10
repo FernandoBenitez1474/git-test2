@@ -9,3 +9,5 @@ function suma(){
 suma();
 
 console.log(numero);
+
+alert("dadsa");
