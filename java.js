@@ -1,13 +1,31 @@
 
-let numero = 5;
+let carrito= 0;
 
-function suma(){
+function comprar(){
+    return new Promise((resolve,reject)=>{
+       
+        let random = Math.round(Math.random()*100);
 
-    numero = numero += 10;
+            console.log("Procesando compra...");
+            setTimeout(()=>{
+                carrito+=1;
+                console.log("Compra procesada");
+                console.log(`carrito: ${carrito}` );
+
+                resolve(carrito);
+            },2000)
+        
+
+    })
 }
 
-suma();
+comprar()
 
-console.log(numero);
+ .then(()=>comprar())
+ .then(()=>comprar())
+ .then(()=>comprar())
 
-alert("dadsa");
+
+
+.catch(error => console.log(error));
+
