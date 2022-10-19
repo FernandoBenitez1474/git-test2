@@ -27,7 +27,7 @@ div{
     width: 60px;
     height: 60px;
     border: 1px solid black;
-    margin: 100px auto;
+    margin: 70px auto;
     border-radius: 100%;
 
     background: linear-gradient(to top left, rgba(255, 0, 0, 0.829),rgba(28, 28, 219, 0.74));
